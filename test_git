@@ -1,1 +1,7 @@
 testing git and vsc
+
+ctrl+shift+p
+git commit
+"add message"
+
+git push
