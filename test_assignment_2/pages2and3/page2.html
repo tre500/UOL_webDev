@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Map || Magic Mistery Park</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="A map of the Magic Mistery park with information about how to get there">
+    <meta name="keywords" content="amusement park, entertainment, leisure, fun, holydays">
+    <meta name="author" content="WebDew module, Team 13_TG2">
+
+
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Map of the Park</h1>
+
+        <div class="logo">
+            <img class="img-crop-rounded" src="img/Theme Park.png" width="100px" height="100px" alt="logo of the park">
+        </div>
+
+    </header>
+
+    <div id="container-parkmap">
+
+        <img src="img/MapofthePark_v2.png" alt="Map of the amusement park" height="100%" width="1000px"
+            usemap="#parkmap">
+
+        <map name="parkmap">
+            <area shape="circle" coords="42,95,22" href="#parking" alt="1a. Parking 1">
+            <area shape="circle" coords="30,405,22" href="#parking" alt="1b. Parking 2">
+
+            <area shape="circle" coords="105,185,18" href="#atm" alt="2. ATM">
+            <area shape="circle" coords="110,142,18" href="#shop" alt="3. Shop">
+
+            <area shape="circle" coords="188,305,22" href="#first-aid" alt="4a. Doctor">
+            <area shape="circle" coords="200,100,22" href="#first-aid" alt="4b. Doctor">
+
+
+            <area shape="circle" coords="410,310,22" href="#rollercoaster" alt="5. Rollercoaster">
+
+            <area shape="circle" coords="438,112,22" href="#" alt="7. Restaurant 1">
+
+            <area shape="circle" coords="200,100,30" href="#" alt="______">
+            <area shape="circle" coords="200,100,30" href="#" alt="______">
+
+
+        </map>
+
+    </div>
+
+    <div class="legend">
+        <p>Click on the map for more information</p>
+        <ol>
+            <li>Parking (a & b)</li>
+            <li>ATM</li>
+            <li>Park Shop</li>
+            <li>First-aid station (a & b)</li>
+            <li>Rollercoaster</li>
+            <li>Blue lagoon</li>
+            <li>Restaurant 1</li>
+            <li>Restaurant 2</li>
+            <li>Hotel 1</li>
+            <li>Hotel 2</li>
+        </ol>
+    </div>
+
+    <div class="map-content-wrapper">
+
+        <section id="parking">
+            <h2>Parking</h2>
+            <p>In the parking area you will find comfortable bicycle racks to securely park your bike (capacity up to
+                5000 bicycles) and 50 parking spots for cars.</p>
+            <p>Prices (entire day):</p>
+            <p>bicycles: 5,00 EUR</p>
+            <p>cars: 120,00 EUR</p>
+
+            <a href="#container-parkmap" class="back-to-map">&#10548; Back to Map ⤴</a>
+        </section>
+
+        <section id="atm">
+            <h2>ATM</h2>
+            <p>All major cards accepted!</p>
+
+            <a href="#container-parkmap" class="back-to-map">&#10548; Back to Map ⤴</a>
+        </section>
+
+        <section id="shop">
+            <h2>Park shop</h2>
+            <p>Where you can find all sorts of merchandise.</p>
+
+            <a href="#container-parkmap" class="back-to-map">&#10548; Back to Map ⤴</a>
+        </section>
+
+        <section id="first-aid">
+            <h2>Firts-aid</h2>
+            <p>A team of health professionals is always on duty during working hours!</p>
+
+            <a href="#container-parkmap" class="back-to-map">&#10548; Back to Map ⤴</a>
+        </section>
+
+        
+        <section id="rollercoaster" class="show-attraction">
+            <h2>Rollercoaster</h2>
+            <p>The most incredible rollercoaster in the world</p>
+            <img src="img/roller-coaster.jpg" alt="View of a rollercoaster">
+
+            <a href="#container-parkmap" class="back-to-map">&#10548; Back to Map ⤴</a>
+        </section>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

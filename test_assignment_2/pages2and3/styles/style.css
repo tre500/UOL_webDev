@@ -1,0 +1,54 @@
+* {
+    /* margin: 0;
+    padding: 0; */
+}
+
+h1 {
+    /* margin: 0; */
+    font-size: 3em;
+    font-family:cursive;
+    /* line-height: 1; */
+    color: blue;
+    background-color: burlywood;
+    text-align: center;
+}
+
+
+#container-parkmap {
+    position: relative;
+    border-style: dashed;
+}
+
+.legend {
+    margin-bottom: 100px;
+}
+
+.legend ol {
+    columns: 30px 3;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+}
+
+
+.img-crop-rounded {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* .map-content-wrapper section {
+    background-color:white;
+} */
+
+.map-content-wrapper section:target {
+    background-color: chartreuse;
+}
+
+.back-to-map {
+    font-style: italic;
+    margin-left: 100px;
+}
