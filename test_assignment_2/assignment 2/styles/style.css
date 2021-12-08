@@ -93,7 +93,12 @@
 	background: #F2F2F2;
 	color: #444444;
 }
+
+/* responsive settings */
 @media screen and (max-width: 800px){
+
+	/* responsive menu */
+
 	#menu {position:relative}
 	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
 	#menu ul.sub-menus {width:100%;position:static;}
@@ -104,6 +109,15 @@
 	#menu input:checked + label {color:white}
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
+
+	/* responsive settings for 6 div blocks */
+	div.promo_main_div div {
+        width: 100%;
+        float: none;
+ 		margin-top: 2em;
+		margin-right: auto;
+		margin-left: auto; 
+}
 }
 
 div #christmass-image {
@@ -111,6 +125,7 @@ div #christmass-image {
       
 }
 
+/* main image div block*/
 #christmass-image{
     position:relative;
     margin: 0;
@@ -136,6 +151,7 @@ div #christmass-image {
     font-size: 2em;
 }
  
+/* main image settings */
 #christmass-image img{
     position:relative;
     width: 100%;
@@ -145,6 +161,7 @@ div #christmass-image {
     
 }
 
+
   #book-christmass-ticket {
     width: 6.2em;
     height: 2.5em;
@@ -153,9 +170,41 @@ div #christmass-image {
     border: none;
 }
  
+#promo_link {
+
+	margin-top: 25%;
+	margin-bottom: 25%;
+}
+
 button:hover {
   background-color: #4CAF50; 
   color: white;
 }
  
+
+/* container div for 6 div blocks */
+.promo_main_div {
+
+	width: 100%;
+	text-align: center;
+	
+	/* margin-left: 10%;
+	margin-right: 10%; */
+	height:120%;
+
+}
+
+
+/* 6 div blocks for advertising */
+.promos {
+ 	/* width: 24%; */
+	width: calc(100% / 4);
+	border: 1px solid black;
+ 	/* float: left; */
+     vertical-align: middle;
+	display:inline-block;
+	align-items: center;
+	height: 13em;
+	margin: 2em auto auto 2em;}
+
  
