@@ -211,7 +211,7 @@ button:hover {
 
 	/* E-mail signup form */
 	form {
- 		font-family: Arial;
+ 		font-family: sans-serif;
 	  }
 	  
 	  .container {
@@ -220,7 +220,7 @@ button:hover {
 	  
 	  input[type=text], input[type=submit] {
 		width: 100%;
-		padding: 12px;
+		padding:9px;
 		margin: 8px 0;
 		display: inline-block;
 		border: 1px solid #ccc;
@@ -232,7 +232,7 @@ button:hover {
 	  }
 	  
 	  input[type=submit] {
-		background-color: #04AA6D;
+		background-color: #12868f;
 		color: white;
 		border: none;
 	  }
