@@ -228,7 +228,7 @@ button:hover {
 	  }
 	  
 	  input[type=checkbox] {
-		margin-top: 16px;
+		margin-top: 10px;
 	  }
 	  
 	  input[type=submit] {
@@ -237,6 +237,21 @@ button:hover {
 		border: none;
 	  }
 	  
+	  
 	  input[type=submit]:hover {
 		opacity: 0.8;
 	  }
+
+ 	  #promotions {
+
+		width: 55%;
+		height: 65%;
+
+	  }
+	  #news {
+
+		width: 35%;
+		height: 65%;
+		 
+	  }
+	  
