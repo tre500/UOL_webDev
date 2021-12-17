@@ -1,7 +1,26 @@
-* {
-    /* margin: 0;
-    padding: 0; */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+div, section {
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+
+section.show-attraction {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
 
 h1 {
     /* margin: 0; */
@@ -13,12 +32,24 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
 
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+
+/* THis contains just the map */
 #container-parkmap {
     position: relative;
     border-style: dashed;
 }
 
+/* The legend just below the map */
 .legend {
     margin-bottom: 100px;
 }
@@ -32,7 +63,7 @@ h1 {
     top: 40px;
 }
 
-
+/* THis is a trick to crop a squared image into a rounded shaped one */
 .img-crop-rounded {
     width: 100px;
     height: 100px;
@@ -40,15 +71,33 @@ h1 {
     border-radius: 50%;
 }
 
-/* .map-content-wrapper section {
-    background-color:white;
-} */
 
 .map-content-wrapper section:target {
     background-color: chartreuse;
 }
 
+/* section {
+    display: block;
+} */
+
 .back-to-map {
+    display: block;
     font-style: italic;
-    margin-left: 100px;
+    text-align: center;
+    color:steelblue;
 }
+
+
+.back-to-map:hover, .back-to-map:active {
+    background-color: burlywood;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.hotels, .restaurants {
+    display: flex;
+    margin: 0 auto;
+}
+
