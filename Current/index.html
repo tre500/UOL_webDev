@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+
+  </head>
+    
+    
+  <body>
+      
+     <nav id='menu'>
+  <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+  <ul>
+    <li><a href='http://'>Tickets & Passes</a></li>
+    <li><a class='dropdown-arrow' href='http://'>Thing's to Do</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Sub Menu 1</a></li>
+        <li><a href='http://'>Sub Menu 2</a></li>
+        <li><a href='http://'>Sub Menu 3</a></li>
+        <li><a href='http://'>Sub Menu 4</a></li>
+      </ul>
+    </li>
+    <li><a href='./about.html'>About</a></li>
+    <li><a class='dropdown-arrow' href='http://'>Services</a>
+      <ul class='sub-menus'>
+        <li><a href='http://'>Sub Menu 1</a></li>
+        <li><a href='http://'>Sub Menu 2</a></li>
+        <li><a href='http://'>Sub Menu 3</a></li>
+      </ul>
+    </li>
+    <li><a href='http://'>Contact Us</a></li>
+    <li><a href='./map.html'>Map</a></li>
+  </ul>
+</nav>
+      
+      
+     <div class="image" id="christmass-image">
+         
+         <div id="test">
+            <h1>Celebrate Christmass with Us</h1>
+             <h2>Dec 20 - Jan 3</h3>
+             
+             <button id="book-christmass-ticket">
+                     Book Now
+                </button>
+             
+         </div>
+         <!--<h1>Celebrate Christmass with Us</h1>
+         <h3>Dec 20 - Jan 3</h3>-->
+         <img src="pics/christmass.jpg" alt="Celebrate Christmass with Us">
+ 
+      </div>
+
+      <!-- future events div block -->
+       <!-- news section -->
+       <div class="future_events_div">
+        <div class="future_event" id="future_events"> 
+          <h3 id="future_event_link" > 
+            <a href="#"> Future events </a>
+          </h3>
+        </div>
+
+         </div>
+        
+         <!-- end of future events div block -->
+
+
+
+      <div class="promo_main_div" >
+        <div class="promos"> 
+          <h3 id="promo_link" > 
+            <a href="#">Promotions</a>
+          </h3>
+        </div>
+
+        <div class="promos"> 
+          <h3 id="promo_link" > 
+            <a href="#">New rides</a>
+          </h3>
+        </div>
+
+        <div class="promos"> 
+          <h3 id="promo_link" > 
+            <a href="#">Park news</a>
+          </h3>
+        </div>
+            
+        <div class="promos"> 
+          <h3 id="promo_link" > 
+            <a href="#">Parking</a>
+          </h3>
+        </div>
+              
+      
+        <div class="promos"> 
+          <h3 id="promo_link" > 
+            <a href="#">Hotels</a>
+          </h3>
+        </div>
+       
+        
+          <div class="promos"> 
+            <h3 id="promo_link" > 
+              <a href="#">Food</a>
+            </h3>
+          </div>  
+         <br style="clear: left;" />
+       </div>
+
+       
+
+
+       <div class="promo_main_div_b" >
+        <div class="promos_b"> 
+          <h3 id="promo_link" > 
+            <a href="#">Promotions</a>
+          </h3>
+        </div>
+
+        <div class="promos_b"> 
+          <h3 id="promo_link" > 
+            <a href="#">New rides</a>
+          </h3>
+        </div>
+ 
+       </div>
+
+
+      <!-- end of news section -->
+
+
+      <!-- footer -->
+
+      <footer>
+        <div class="container">
+            <div class="left section">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="social">
+                    <a href="https://thempark.com.com"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+                    <a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="center section">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text"> London</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text"> +123456789</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text"> contact@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right section">
+                <h2>Subscribe</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email*</div>
+                        </div>
+                        <input type="email" required>
+                        <div class="btn">
+                            <button type="submit">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <center>
+                <div><span>Powered By <a href="https://themepark.com">© 2021 | All Rights Reserved | Made By web-develop-t1g2-eaj</a></span></div>
+            </center>
+        </div>
+    </footer>
+
+      <!-- end of footer -->
+
+
+
+    </body>
+    
+    
+</html>

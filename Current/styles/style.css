@@ -1,0 +1,572 @@
+#menu {
+	background: rgba(0, 153, 204, 0.5);
+	color: #FFF;
+	height: 47px;
+	padding-left: 18px;
+    margin-bottom: 1em;
+ }
+
+#menu ul, #menu li {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none
+}
+
+#menu ul {
+	width: 100%;
+}
+
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+
+#menu a {
+	display: block;
+	line-height: 47px;
+	padding: 0 14px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+}
+
+#menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+}
+
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 47px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+
+#menu label {
+	display: none;
+	line-height: 47px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#menu li:hover ul.sub-menus {
+	display: block
+}
+
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+
+/* responsive settings */
+@media screen and (max-width: 800px){
+
+	
+
+	/* responsive menu */
+
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+
+
+	#future_events {
+		width: 100%;
+        float: none;
+ 		margin-top: 2em;
+		margin-right: auto;
+		margin-left: auto; 
+
+	}
+
+	 .promos {
+		 width: 20%;
+	 }
+
+	 .promos_b {
+		width: 20%;
+	}
+
+	/* responsive settings for 6 div blocks */
+	div.promo_main_div div {
+        width: 100%;
+        float: none;
+ 		margin-top: 2em;
+		margin-right: auto;
+		margin-left: auto; 
+		margin-bottom: 2em;
+}
+
+div.promo_main_div_b div {
+	width: 100%;
+	float: none;
+	 margin-top: 2em;
+	margin-right: auto;
+	margin-left: auto; 
+	margin-bottom: 2em;
+}
+
+		 
+		 
+
+
+	/* footer responsive block */
+	footer{
+        position: relative;
+        bottom: 0px;
+    }
+
+    .left .content{
+        padding-right:0px;
+        padding-bottom: 30px;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding:0.5rem;
+    }
+
+    .container .section{
+        margin:5px 0;
+    }
+
+}
+
+/* end of responsive settings */
+
+div #christmass-image {
+    margin: 1em;
+      
+}
+
+/* main image div block*/
+#christmass-image{
+    position:relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:rgba(0,0,0,0.6);
+ }
+ 
+#test {
+    position:absolute;
+ 
+    z-index: 1;
+    color: white;
+    font-family: sans-serif;
+}
+
+#test, h1 {
+    font-size: 3.2em;
+}
+
+#test, h2 {
+    font-size: 2em;
+}
+ 
+/* main image settings */
+#christmass-image img{
+    position:relative;
+    width: 100%;
+    opacity: 0.5;
+    height: 420px;
+    object-fit: cover;
+    
+}
+
+
+  #book-christmass-ticket {
+    width: 6.2em;
+    height: 2.5em;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+    border: none;
+}
+ 
+#promo_link {
+
+	margin-top: 25%;
+	margin-bottom: 25%;
+}
+
+button:hover {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+
+/* future events css block */
+/* container div for 6 div blocks */
+.promo_main_div {
+
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2em;
+	/* margin-left: 10%;
+	margin-right: 10%; */
+	height:120%;
+
+}
+
+
+.promo_main_div_B {
+
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2em;
+	/* margin-left: 10%;
+	margin-right: 10%; */
+	height:120%;
+
+}
+
+.promos_b {
+	/* width: 24%; */
+   width: calc(100%/2.2);
+   border: 1px solid black;
+	/* float: left; */
+	vertical-align: middle;
+   display:inline-block;
+   align-items: center;
+   height: 16em;
+   margin: 2em auto auto 2em;}
+
+
+/* 6 div blocks for advertising */
+.future_event {
+ 	/* width: 24%; */
+	width: 95%;
+	border: 1px solid black;
+ 	/* float: left; */
+ 	display:inline-block;
+ 	height: 23em;
+	margin: 2em auto auto 2em;}
+/* end of future events block */
+ 
+
+/* 6 div blocks for advertising */
+.promos {
+ 	/* width: 24%; */
+	width: calc(100% / 4);
+	border: 1px solid black;
+ 	/* float: left; */
+     vertical-align: middle;
+	display:inline-block;
+	align-items: center;
+	height: 13em;
+	margin: 2em auto auto 2em;}
+
+ 
+/* 
+	E-mail signup form
+	form {
+ 		font-family: sans-serif;
+	  }
+	  
+	  .container {
+		padding: 10px;
+	  }
+	  
+	  input[type=text], input[type=submit] {
+		width: 100%;
+		padding:9px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	  }
+	  
+	  input[type=checkbox] {
+		margin-top: 10px;
+	  }
+	  
+	  input[type=submit] {
+		background-color: #12868f;
+		color: white;
+		border: none;
+	  }
+	  
+	  
+	  input[type=submit]:hover {
+		opacity: 0.8;
+	  } */
+
+ 	    
+
+
+	  /* footer */
+
+	   
+
+ 
+
+footer{
+	padding:0; 
+	margin:0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3em;
+    bottom: 0;
+    width: 100%;
+    background-color: #053742;
+}
+
+.container{
+    display: flex;
+    padding: 1rem;
+}
+
+.container .section{
+    flex-basis: 50%;
+    padding: 0 20px;
+}
+
+.section h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section .content{
+    margin:20px 0 0 0;
+    position: relative;
+}
+
+.section .content::before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+}
+
+.section .content::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 15%;
+    background-color: #dd5f24;
+    top: -10px;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 50px;
+    transition: 0.4s;
+    border:1px solid #656565;
+}
+
+
+.left .content .social a span:hover{
+    background: #dd5f24;
+}
+
+.center .content .fas{
+    font-size: 1.1rem;
+    background: transparent;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+    border:1px solid #656565;
+}
+
+.center .content .fas:hover{
+    background: #dd5f24;
+    border:1px solid #dd5f24;
+}
+
+.center .content .text{
+    font-size: 1.0.6rem;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+.center .content .phone{
+    margin: 15px 0;
+}
+
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
+}
+
+.right form input{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: transparent;
+    border: 1px solid #656565;
+}
+
+.right form input{
+    height: 35px;
+}
+
+.right form .btn{
+    margin-top: 10px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 100%;
+    border:none;
+    outline: none;
+    background: #dd5f24;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.right form .btn button:hover{
+    background: #000;
+}
+
+.footer-bottom center{
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.footer-bottom center span{
+    color: #656565;
+}
+
+.footer-bottom center a{
+    text-decoration: none;
+}
+
+.footer-bottom center a:hover{
+    text-decoration: underline;
+}
+
+ 
+
+	  /* end of footer */
+/* THis contains just the map */
+#container-parkmap {
+    position: relative;
+    border-style: dashed;
+}
+
+/* The legend just below the map */
+.legend {
+    margin-bottom: 100px;
+}
+
+.legend ol {
+    columns: 30px 3;
+}
+
+.logo {
+    position: absolute;
+    top: 40px;
+}
+
+/* THis is a trick to crop a squared image into a rounded shaped one */
+.img-crop-rounded {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.map-content-wrapper section:target {
+    background-color: chartreuse;
+}
+
+/* section {
+    display: block;
+} */
+
+.back-to-map {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    color:steelblue;
+}
+
+
+.back-to-map:hover, .back-to-map:active {
+    background-color: burlywood;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+.hotels, .restaurants {
+    display: flex;
+    margin: 0 auto;
+}
+
+section.show-attraction {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}	  
