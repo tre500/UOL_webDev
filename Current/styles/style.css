@@ -1,3 +1,13 @@
+
+h1 {
+    font-size: 3.2em;
+}
+
+h2 {
+    font-size: 2em;
+}
+ 
+
 #menu {
 	background: rgba(0, 153, 204, 0.5);
 	color: #FFF;
@@ -201,14 +211,6 @@ div #christmass-image {
     font-family: sans-serif;
 }
 
-#test, h1 {
-    font-size: 3.2em;
-}
-
-#test, h2 {
-    font-size: 2em;
-}
- 
 /* main image settings */
 #christmass-image img{
     position:relative;
@@ -507,6 +509,57 @@ footer{
  
 
 	  /* end of footer */
+
+
+
+/* ************************************PAGE2******************************************************************************* */
+
+
+/* The following instructions come from Pietro's orginal stylesheet, but had been omitted in the merged version for submission 2
+Reinstating them to test how it works.
+*/
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* div, section {
+    margin-bottom: 50px;
+    padding: 10px;
+} */
+
+
+section.show-attraction {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+
+.p2 h1 {
+    /* margin: 0; */
+    /* font-size: 3em; */
+    /* line-height: 1; */
+    background-color: hsla(195, 100%, 40%, 0.8);
+	color: #FFF;
+    text-align: center;
+}
+
+/* h2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+} */
+
+/* p {
+    margin-top: 0;
+    margin-bottom: 5px;
+} */
+
+
+
+
+
 /* THis contains just the map */
 #container-parkmap {
     position: relative;

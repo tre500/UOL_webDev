@@ -23,7 +23,38 @@
 
 <body>
 
-    <header>
+
+          
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+          <li><a href='http://'>Tickets & Passes</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Thing's to Do</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Sub Menu 1</a></li>
+              <li><a href='http://'>Sub Menu 2</a></li>
+              <li><a href='http://'>Sub Menu 3</a></li>
+              <li><a href='http://'>Sub Menu 4</a></li>
+            </ul>
+          </li>
+          <li><a href='./about.html'>About</a></li>
+          <li><a class='dropdown-arrow' href='http://'>Services</a>
+            <ul class='sub-menus'>
+              <li><a href='http://'>Sub Menu 1</a></li>
+              <li><a href='http://'>Sub Menu 2</a></li>
+              <li><a href='http://'>Sub Menu 3</a></li>
+            </ul>
+          </li>
+          <li><a href='http://'>Contact Us</a></li>
+          <li><a href='./map.html'>Map</a></li>
+          <li><a href='./index.html'>Home</a></li>
+        </ul>
+      </nav>
+            
+
+
+
+    <header class="p2">
         <h1>Map of the Park</h1>
 
         <div class="logo">
@@ -32,7 +63,7 @@
 
     </header>
 
-    <div id="container-parkmap">
+    <div class="p2" id="container-parkmap">
 
         <img src="pics/MapofthePark_v2.png" alt="Map of the amusement park" height="100%" width="1000px"
             usemap="#parkmap">
