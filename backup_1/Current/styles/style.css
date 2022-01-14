@@ -104,8 +104,10 @@ h2 {
 	color: #444444;
 }
 
-/* responsive settings -----------------------------------------------------------------------*/
+/* responsive settings */
 @media screen and (max-width: 800px){
+
+	
 
 	/* responsive menu */
 
@@ -131,6 +133,14 @@ h2 {
        
 	}
 
+	 .promos {
+		 width: 20%;
+	 }
+
+	 .promos_b {
+		width: 20%;
+	}
+
 	/* responsive settings for 6 div blocks */
 	div.promo_main_div div {
         width: 100%;
@@ -141,20 +151,15 @@ h2 {
 		margin-bottom: 2em;
 }
 
-    div.promo_main_div_b div {
-        width: 100%;
-        float: none;
-        margin-top: 2em;
-        margin-right: auto;
-        margin-left: auto; 
-        margin-bottom: 2em;
-        height: auto;
-    }
+div.promo_main_div_b div {
+	width: 100%;
+	float: none;
+	 margin-top: 2em;
+	margin-right: auto;
+	margin-left: auto; 
+	margin-bottom: 2em;
+}
 
-    .promos {
-        font-size: 1.1em;
-    }
- 
     .future_events_div {
         font-size: 0.7em;
     }
@@ -163,7 +168,6 @@ h2 {
         font-size: 0.7em;
     } 
 
-    
 
 	/* footer responsive block */
 	footer{
@@ -190,13 +194,13 @@ h2 {
 
 /* end of responsive settings */
 /* ----------------------------------------------------------------------------------------------- */
-div #christmas-image {
+div #christmass-image {
     margin: 1em;
       
 }
 
 /* main image div block*/
-#christmas-image{
+#christmass-image{
     position:relative;
     margin: 0;
     display: flex;
@@ -214,7 +218,7 @@ div #christmas-image {
 }
 
 /* main image settings */
-#christmas-image img{
+#christmass-image img{
     position:relative;
     width: 100%;
     opacity: 0.5;
@@ -224,7 +228,7 @@ div #christmas-image {
 }
 
 
-  #book-christmas-ticket {
+  #book-christmass-ticket {
     background-color: Transparent; 
     width: 8em;
     height: 2.5em;
@@ -234,7 +238,7 @@ div #christmas-image {
     transition-duration: 0.4s;
 }
 
-#book-christmas-ticket:hover {
+#book-christmass-ticket:hover {
     background-color: rgba(42, 211, 174, 0.521); 
 
   }
@@ -277,8 +281,6 @@ button:hover {
 }
 
 .promos_b {
-    background-repeat: no-repeat;
-  background-size: 100% 100%;
    text-align: center;
    width: calc(100%/2.2);
    border: 1px solid black;
@@ -328,8 +330,7 @@ button:hover {
     padding-top: 10%;
     position: relative;
     background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/future_event.jpg");
-	background-size: 100% 100%;
-    width: 95%;
+	width: 95%;
     color: #FFF;
     text-align: center;
     vertical-align: middle;
@@ -342,7 +343,8 @@ button:hover {
 
 /* 6 div blocks for advertising */
 .promos {
- 	width: calc(100% / 4);
+ 	/* width: 24%; */
+	width: calc(100% / 4);
 	border: 1px solid black;
     vertical-align: middle;
 	display:inline-block;
@@ -351,9 +353,9 @@ button:hover {
 	margin: 2em auto auto 2em;
     color: #FFF;
     z-index: 1;
-    /* font-size: 0.9em; */
+    font-size: 0.9em;
 }
- 
+
     .new_ride {
         background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/new_ride.jpg);
         /* color: #FFF;
