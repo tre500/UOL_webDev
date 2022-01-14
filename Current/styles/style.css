@@ -124,12 +124,13 @@ h2 {
 
 
 	#future_events {
+        
 		width: 100%;
         float: none;
  		margin-top: 2em;
 		margin-right: auto;
 		margin-left: auto; 
-
+       
 	}
 
 	 .promos {
@@ -159,8 +160,13 @@ div.promo_main_div_b div {
 	margin-bottom: 2em;
 }
 
+    .future_events_div {
+        font-size: 0.7em;
+    }
 		 
-		 
+	.promo_main_div {
+        font-size: 0.7em;
+    } 
 
 
 	/* footer responsive block */
@@ -187,7 +193,7 @@ div.promo_main_div_b div {
 }
 
 /* end of responsive settings */
-
+/* ----------------------------------------------------------------------------------------------- */
 div #christmass-image {
     margin: 1em;
       
@@ -223,12 +229,19 @@ div #christmass-image {
 
 
   #book-christmass-ticket {
-    width: 6.2em;
+    background-color: Transparent; 
+    width: 8em;
     height: 2.5em;
+    border: white 1px solid;
+    color: #FFF;
     border-radius: 6px;
     transition-duration: 0.4s;
-    border: none;
 }
+
+#book-christmass-ticket:hover {
+    background-color: rgba(42, 211, 174, 0.521); 
+
+  }
  
 #promo_link {
 
@@ -268,24 +281,61 @@ button:hover {
 }
 
 .promos_b {
-	/* width: 24%; */
+   text-align: center;
    width: calc(100%/2.2);
    border: 1px solid black;
-	/* float: left; */
-	vertical-align: middle;
+   vertical-align: middle;
    display:inline-block;
-   align-items: center;
-   height: 16em;
-   margin: 2em auto auto 2em;}
+   height: 20em;
+   margin: 2em auto auto 2em;
+   color: white;
+   /* font-size: 1.6em; */
+    }   
+
+    .guide {
+            background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/guide.jpg");
+
+    }
+    
+
+    .promos_b p {
+        font-size: 1.1em;
+        }
+    
+    .cv19 {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/safety.jpg");
+
+    }
+    
+
+#future_event_link {
+        z-index: 1;
+        color:#ffffff; 
+        font-size: 1.6em;
+        font-family: sans-serif;
+        
+ 
+   }
+ 
+   .future_event p {
+        font-size: 1.4em;
+        font-family: sans-serif;
+             
+      }
 
 
 /* 6 div blocks for advertising */
 .future_event {
  	/* width: 24%; */
+    padding-top: 10%;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/future_event.jpg");
 	width: 95%;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
 	border: 1px solid black;
- 	/* float: left; */
- 	display:inline-block;
+  	display:inline-block;
  	height: 23em;
 	margin: 2em auto auto 2em;}
 /* end of future events block */
@@ -296,12 +346,77 @@ button:hover {
  	/* width: 24%; */
 	width: calc(100% / 4);
 	border: 1px solid black;
- 	/* float: left; */
-     vertical-align: middle;
+    vertical-align: middle;
 	display:inline-block;
 	align-items: center;
 	height: 13em;
-	margin: 2em auto auto 2em;}
+	margin: 2em auto auto 2em;
+    color: #FFF;
+    z-index: 1;
+    font-size: 0.9em;
+}
+
+    .new_ride {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/new_ride.jpg);
+        /* color: #FFF;
+        z-index: 1;
+        font-size: 0.9em; */
+      }
+
+      
+       
+       .dining {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/dining.jpg);
+        /* color: #FFF;
+        z-index: 1;
+        font-size: 0.9em; */
+      }
+
+      .shopping {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/shopping.jpg);
+        /* color: #FFF;
+        z-index: 1;
+        font-size: 0.9em; */
+      }
+
+      .special_events {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/events.jpg);
+        /* color: #FFF;
+        z-index: 1;
+        font-size: 0.9em; */
+      }
+
+      .annual_pass {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/annual_pass.jpg);
+        /* color: #FFF;
+        z-index: 1;
+        font-size: 0.9em; */
+      }
+
+      .parking {
+        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/parking.jpg);
+        
+      }
+
+      
+
+ 
+     #promos_button {
+        background-color: Transparent; 
+        width: 8em;
+        height: 2.5em;
+        border: white 1px solid;
+        color: #FFF;
+        border-radius: 6px;
+        transition-duration: 0.4s;
+  
+      }
+
+      #promos_button:hover {
+        background-color: rgba(42, 211, 174, 0.521); 
+ 
+      }
+
 
  
 /* 
@@ -491,7 +606,7 @@ footer{
 .footer-bottom center{
     padding: 5px;
     font-size: 0.9375rem;
-    background: #151515;
+    /* background: #151515; */
 }
 
 .footer-bottom center span{
