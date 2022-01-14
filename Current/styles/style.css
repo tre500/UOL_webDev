@@ -628,24 +628,8 @@ footer{
 /* ************************************PAGE2******************************************************************************* */
 
 
-/* The following instructions come from Pietro's orginal stylesheet, but had been omitted in the merged version for submission 2
-Reinstating them to test how it works.
-*/
-
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-/* div, section {
-    margin-bottom: 50px;
-    padding: 10px;
-} */
-
-
-section.show-attraction {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
 }
 
 
@@ -654,15 +638,15 @@ section.show-attraction {
     /* margin: 0; */
     /* font-size: 3em; */
     /* line-height: 1; */
-    background-color: hsla(195, 100%, 40%, 0.8);
+    background-color: rgb(78, 119, 186);
 	color: #FFF;
     text-align: center;
 }
 
-/* h2 {
+section h2 {
     margin-bottom: 5px;
     margin-top: 15px;
-} */
+}
 
 /* p {
     margin-top: 0;
@@ -673,15 +657,22 @@ section.show-attraction {
 
 
 
-/* THis contains just the map */
+/* THis contains just the map ---------------------------*/
 #container-parkmap {
     position: relative;
     border-style: dashed;
 }
 
-/* The legend just below the map */
+/* The legend just below the map ---------------------------------*/
 .legend {
-    margin-bottom: 100px;
+    margin-bottom: 80px;
+
+    background: rgba(0, 153, 204, 0.5);
+    border-radius: 10px;
+    border: 1px solid rgb(58, 27, 168);
+    text-align:center;
+    /* width:100%; */
+
 }
 
 .legend ol {
@@ -702,19 +693,85 @@ section.show-attraction {
 }
 
 
-.map-content-wrapper section:target {
-    background-color: chartreuse;
+/* Define grid areas ----------------------------------------------*/
+
+#parking {
+    grid-area: 1/1/2/5;
 }
 
-/* section {
+#atm {
+    grid-area: 2/1/3/5;
+}
+
+#shop {
+    grid-area: 3/1/4/5;
+}
+
+#first-aid {
+    grid-area: 4/1/5/5;
+}
+
+/* laypoout for attractions ---------------------- */
+#rollercoaster {
+    justify-content: center;
+    text-align: center;
+    grid-area: 5/2 / 6/6;
+}
+
+.restaurants {
+    grid-area: 6/1 / 7/7;
+}
+
+.hotels {
+    grid-area: 7/1 / 8/7;
+}
+
+.hotels, .restaurants {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 50% 50%;
+}
+
+.show-attraction img {
+    width: 600px;
+}
+
+.sub-attraction img {
+    width: 300px;
+}
+
+/* Main grid------------------------ */
+
+
+.map-content-wrapper  {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+}
+
+
+.map-content-wrapper section {
+    background-color: rgb(219, 237, 240);
+    padding: 23em;
     display: block;
-} */
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+.map-content-wrapper section:target {
+    background-color: rgb(21, 126, 117);
+    color: rgb(250, 237, 166);
+}
+
 
 .back-to-map {
     display: block;
     font-style: italic;
     text-align: center;
-    color:steelblue;
+
 }
 
 
@@ -722,17 +779,23 @@ section.show-attraction {
     background-color: burlywood;
     font-weight: bold;
     text-decoration: none;
+    color:steelblue;
+}
+
+.back-to-map:active {
+    color:  rgb(250, 237, 166);
 }
 
 
-
+/* 
 .hotels, .restaurants {
-    display: flex;
+    display: inline;
     margin: 0 auto;
-}
+} */
 
-section.show-attraction {
+
+/* section.show-attraction {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-}	  
+}  */
