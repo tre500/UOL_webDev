@@ -915,11 +915,7 @@ footer{grid-area:footer;}
     font-variant: normal;
     font-weight: bold;
     font-size: 15px;
-<<<<<<< HEAD
     color: rgb(5, 61, 98);
-=======
-    color:rgb(5,61,98);
->>>>>>> e1b0b6c241d4dae57e0d798a14c89c3a6f83ff00
     background: rgba(204,227,242,0.5);
 }
 
