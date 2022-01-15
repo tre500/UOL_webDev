@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Blue Lagoon</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Main Attraction" />
+    <meta name="keywords" content="amusement park, entertainment, leisure, fun, holydays"/>
+    <meta name="author" content="WebDew module, Team 13_TG2" />
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+    <div class = "grid-container-bl">
+        
+    <nav id='menu'>
+      <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+      <ul>
+        <li><a href='http://'>Tickets & Passes</a></li>
+        <li><a class='dropdown-arrow' href='http://'>Thing's to Do</a>
+          <ul class='sub-menus'>
+            <li><a href='http://'>Sub Menu 1</a></li>
+            <li><a href='http://'>Sub Menu 2</a></li>
+            <li><a href='http://'>Sub Menu 3</a></li>
+            <li><a href='http://'>Sub Menu 4</a></li>
+          </ul>
+        </li>
+        <li><a href='./about.html'>About</a></li>
+        <li><a class='dropdown-arrow' href='http://'>Services</a>
+          <ul class='sub-menus'>
+            <li><a href='http://'>Sub Menu 1</a></li>
+            <li><a href='http://'>Sub Menu 2</a></li>
+            <li><a href='http://'>Sub Menu 3</a></li>
+          </ul>
+        </li>
+        <li><a href='http://'>Contact Us</a></li>
+        <li><a href='./map.html'>Map</a></li>
+      </ul>
+    </nav>
+    
+    <header id = "blueLagoon">
+        <div id="blHeading">
+            <h1>The Blue Lagoon</h1>
+        </div>
+        <!-- Section containing Main Picture -->
+        <div id = "blMainPicture">
+            <img src="pics/The Blue Lagoon Main.jpg" width="640" height="346" alt="The Blue Lagoon"/>
+        </div>
+    </header>
+
+<!--   do we still plan to insert this? -->
+<!--    <aside>Covid-19 information</aside>-->
+
+    <!-- Section containing grid with 2 additional pictures and their descriptions -->
+    
+        <!-- Scenery 1-->
+        <div class = "blScenery featureOne">
+            <!-- Picture 1 -->
+            <div class = "blSceneryPic">
+                <img src="pics/The Blue Lagoon Picture 1.jpg" width="480" height="256" alt="The Blue Lagoon Picture 1"/>
+            </div>
+            <!-- Description 1 -->
+            <div class = "blSceneryText">
+                <h3>Feature Activity 1</h3>
+                <p>Description 1. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+        
+        <!-- Scenery 2-->
+        <div class = "blScenery featureTwo">
+            <!-- Picture 2 -->
+            <div class = "blSceneryPic">
+                <img src="pics/The Blue Lagoon Picture 2.jpg" width="480" height="256" alt="The Blue Lagoon Picture 2"/>
+            </div>
+            <!-- Description 2 -->
+            <div class = "blSceneryText">
+                <h3>Feature Activity 2</h3>
+                <p>Description 2. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+    
+    <!-- Information about the Blue Lagoon attraction -->
+    <div id = "blInformation">
+        <h2>Loose yourself in the depths of The Blue Lagoon</h2>
+        <p>
+        [p1]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+        pariatur nobis a quidem modi labore, incidunt perspiciatis quo
+        praesentium, cupiditate debitis fugiat dolor aspernatur omnis provident
+        iste corporis! Vel, aut.
+        </p>
+        <p>
+        [p2]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+        pariatur nobis a quidem modi labore, incidunt perspiciatis quo
+        praesentium, cupiditate debitis fugiat dolor aspernatur omnis provident
+        iste corporis! Vel, aut.
+        </p>
+        <p>
+        [p3]Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+        pariatur nobis a quidem modi labore, incidunt perspiciatis quo
+        praesentium, cupiditate debitis fugiat dolor aspernatur omnis provident
+        iste corporis! Vel, aut.
+        </p>
+    </div>
+    
+     <!-- footer -->
+
+    <footer>
+        <div class="container">
+            <div class="left section">
+                <h2>About Us</h2>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="social">
+                    <a href="https://thempark.com.com"><span class="fab fa-facebook-f"></span></a>
+                    <a href="https://instagram.com/"><span class="fab fa-instagram"></span></a>
+                    <a href="https://www.youtube.com/"><span class="fab fa-youtube"></span></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="center section">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text"> London</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text"> +123456789</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text"> contact@example.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right section">
+                <h2>Subscribe</h2>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email*</div>
+                        </div>
+                        <input type="email" required>
+                        <div class="btn">
+                            <button type="submit">SUBSCRIBE</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <center>
+                <div><span>Powered By <a href="https://themepark.com">© 2021 | All Rights Reserved | Made By web-develop-t1g2-eaj</a></span></div>
+            </center>
+        </div>
+    </footer>
+    </div>
+    
+
+</body>
+</html>
