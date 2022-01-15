@@ -2,6 +2,12 @@
 
 <html lang="en">
     
+<!-- header information The header section contains title section that will be displayed in opened browser tab, 
+     metadata about the website, such as encoding, display settings for different devices.
+     The viewport settings varies with the device, and will be smaller on a mobile phone than on a computer screen.
+     The initial-scale property controls the zoom level when the page is first loaded. 
+     Also contains links for stylesheets and other connected libraries.
+ -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +18,16 @@
 
   </head>
     
+  <!-- end of header section --------------------------------------------------------------------  -->
     
   <body>
-      
-     <nav id='menu'>
+    
+    <!-- navigation menu block------------------------------------------
+      Only "about us" and "map page" links are active. 
+      Other submenus and buttons on the page are there for demonstration purposes only and will not redirect to another pages.
+    -->
+
+  <nav id='menu'>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
     <li><a href='http://'>Tickets & Passes</a></li>
@@ -39,8 +51,16 @@
     <li><a href='./map.html'>Map</a></li>
   </ul>
 </nav>
+  
+<!-- end of menu block -------------------------------------------->
       
-      
+
+<!--  code under this line related to first main div block --------------------------------------------- */
+    Contains information about main event
+    div block includes header, button tags and background image 
+    Please note button's are for demonstration purposes only and will not redirect to any page
+   -->
+
      <div class="image" id="christmas-image">
          
          <div id="test">
@@ -49,36 +69,97 @@
              
              <button id="book-christmas-ticket">
                      Book Now
-                </button>
+            </button>
              
          </div>
-         <!--<h1>Celebrate Christmas with Us</h1>
-         <h3>Dec 20 - Jan 3</h3>-->
+         
          <img src="pics/christmas.jpg" alt="Celebrate Christmas with Us">
  
       </div>
 
-      <!-- future events div block -->
-       <!-- news section -->
+      <!-- Buy ticket form
+           choose the date, number of adults, number of kids. 
+           Form uses little bit of javascript to increase and decrease numbers in input field
+          Please note button's are for demonstration purposes only and will not redirect to any page -->
+      <div class="buy-ticket-class"> 
+        <form>
+
+          <h3>Plan your vacation</h3>
+          
+          <label for="number">Adults: </label>
+          <button class="plus-minus-button" type="button" onclick="decrement_adults()">-</button>
+          <input class="select-people" id="select-adults" type="number" min=1 max=20>
+          <button class="plus-minus-button" type="button" onclick="increment_adults()">+</button>
+          
+          <label for="number">Kids: </label>
+          <button class="plus-minus-button" type="button" onclick="decrement_kids()">-</button>
+          <input class="select-people" id="select-kids" type="number" min=1 max=20>
+          <button class="plus-minus-button" type="button" onclick="increment_kids()">+</button>
+
+          <label for="date">Choose date:</label>
+          <input id="book-date" type="date" name="Buy Ticket"> 
+          <button id="buy-ticket" type="button">Buy Ticket</button>
+
+          <script>
+             function increment_adults() {
+                document.getElementById('select-adults').stepUp();
+             }
+             function decrement_adults() {
+                document.getElementById('select-adults').stepDown();
+             }
+
+             function increment_kids() {
+                document.getElementById('select-kids').stepUp();
+             }
+             function decrement_kids() {
+                document.getElementById('select-kids').stepDown();
+             }
+          </script>
+        </form>
+
+        <hr style="margin-top: 2%;">
+      </div>
+      <!-- end of buy ticket form --------------------------------->
+
+
+      
+      <!-- future events div block. 
+        Here We advertise next big event
+        Includes header text, paragrahp and button to see more details about upcoming event.  
+      Please note button's are for demonstration purposes only and will not redirect to any page
+      -->
+        
        <div class="future_events_div">
-         <p style="text-align: center; margin: 2% 10% 2% 10%; font-size: 1.6em;">Celebrate the most wonderful time of the year at Blue Lagoon's ultimate holiday event, NewYearFest! 
-          The park will transform into a winter wonderland with millions of shimmering lights, breathtaking décor, and lavish displays. 
-          300-foot-tall Christmas tree and the iconic fountain on Main Street will transform into the most beautiful and largest ice-skating rink around.</p>
-        <div class="future_event" id="future_events"> 
-          <h3 id="future_event_link" > 
-            Millions of Twinkling Lights Illuminate Holiday Nights           
-          </h3>
-          <p>Visit our light show on New Year's night</p>
-            <button id="book-christmas-ticket">
-              Learn more
-         </button>
-        </div>
+          <p style="text-align: center; margin: 2% 10% 2% 10%; font-size: 1.6em;">Celebrate the most wonderful time of the year at Blue Lagoon's ultimate holiday event, NewYearFest! 
+            The park will transform into a winter wonderland with millions of shimmering lights, breathtaking décor, and lavish displays. 
+            300-foot-tall Christmas tree and the iconic fountain on Main Street will 
+            transform into the most beautiful and largest ice-skating rink around.
+          </p>
+
+          <div class="future_event" id="future_events"> 
+              <h3 id="future_event_link" > 
+                Millions of Twinkling Lights Illuminate Holiday Nights           
+              </h3>
+              <p>Visit our light show on New Year's night</p>
+              <button id="book-christmas-ticket">
+                  Learn more
+              </button>
+          </div>
 
          </div>
         
          <!-- end of future events div block -->
 
 
+
+
+         <!-- code under this line is for div with 6 small div blocks. 
+            Contains information such as locations of parking lots, events, hotels, restaurants, etc 
+            All small div blocks wrapped in in one main div block.
+            Each small div block contains paragraph tags, button element and 
+            background picture that is set with css code instead of "img" tag.
+            Please note! button's are for demonstration purposes only and will not redirect to any page
+          ------------------------------------------------------------------------------------->
 
       <div class="promo_main_div" >
         
@@ -114,14 +195,13 @@
         </div>
             
         <div class="promos special_events"> 
-         <P>Special Events & Tours</P>
-         <p>Holiday magic, seasonal events, special events and guided tours</p>
-         <button id="promos_button">
-            Learn more
-        </button>
+          <P>Special Events & Tours</P>
+          <p>Holiday magic, seasonal events, special events and guided tours</p>
+          <button id="promos_button">
+              Learn more
+          </button>
         </div>
               
-      
         <div class="promos annual_pass"> 
           <P>Annual Passes</P>
           <p>Now is the time to answer the call and discover all the possibilities an annual pass can bring</p>
@@ -131,35 +211,40 @@
         </div>
        
         
-          <div class="promos parking"> 
-            <P>Parking</P>
-           <p>Explore the variety of parking options available across the Walt Disney World Resort</p>
-           <button id="promos_button">
-            Reserve a spot
-        </button>
-          </div>  
-          <P id="promo_main_p" style="text-align: center; margin: 2% 10% 2% 10%;">
-            For assistance with your Blue Lagoon vacation, including resort/package bookings and tickets, please call 1-800-939-5277.
-            For Blue Lagoon dining, please book your reservation online.
-            7:00 AM to 3:00 AM Eastern Time. Guests under 18 years of age must have parent or guardian permission to call.
-  
-          </P>
-         <br style="clear: left;" />
+      <div class="promos parking"> 
+          <P>Parking</P>
+          <p>Explore the variety of parking options available across the Walt Disney World Resort</p>
+          <button id="promos_button">
+          Reserve a spot
+          </button>
+      </div>
+
+        <P id="promo_main_p" style="text-align: center; margin: 2% 10% 2% 10%;">
+          For assistance with your Blue Lagoon vacation, including resort/package bookings and tickets, please call 1-800-939-5277.
+          For Blue Lagoon dining, please book your reservation online.
+          7:00 AM to 3:00 AM Eastern Time. Guests under 18 years of age must have parent or guardian permission to call.
+        </P>
+        <br style="clear: left;" />
        </div>
 
-       
+       <!-- end of main div promo block-------------------------------------------------------->
 
+
+
+       <!------------------------------  this block of general information and covid safety protocols
+        2 divs wrapped in one main div block. each block contains header text, paragraph, and button 
+        that will lead to page with more information about topic. 
+        Please note! button's are for demonstration purposes only and will not redirect to any page -->
 
        <div class="promo_main_div_b" >
         <div class="promos_b guide"> 
           <h2>Your Guide to Important Information and Updated Experiences</h2>
-            <p>
-              See what you need to know before you visit the Blue Lagoon resort.
-              </p>
-              <button id="promos_button">
-                Learn more
-            </button>
-          </h3>
+          <p>
+            See what you need to know before you visit the Blue Lagoon resort.
+          </p>
+          <button id="promos_button">
+            Learn more
+          </button>
         </div>
 
         <div class="promos_b cv19"> 
@@ -169,24 +254,22 @@
           <p>
             We've updated our safety measures in accordance with the WHO and local health guidance.
           </p>
-            <p>
-              For details about who is currently required to wear a mask, 
-              our thorough cleanliness protocols, and other important information for planning your visit.
-            </p>
-            <button id="promos_button">
-              Learn more
+          <p>
+            For details about who is currently required to wear a mask, 
+            our thorough cleanliness protocols, and other important information about safety.
+          </p>
+          <button id="promos_button">
+            Learn more
           </button>
         </div>
-
-        
- 
        </div>
+      <!-- end of general information block--------------------------------------- -->
 
 
-      <!-- end of news section -->
-
-
-      <!-- footer -->
+      <!-- footer section ---------------------------------------------------
+        Contains links to social networks profiles, subscribe form and contact information
+        Please note! button's are for demonstration purposes only and will not redirect to any page
+      --------------------------------------------------------------------------------------->
 
       <footer>
         <div class="container">
@@ -243,11 +326,8 @@
         </div>
     </footer>
 
-      <!-- end of footer -->
-
-
+      <!-- end of footer -------------------------------------------------------->
 
     </body>
-    
     
 </html>
