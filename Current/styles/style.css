@@ -914,11 +914,7 @@ footer{grid-area:footer;}
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-<<<<<<< HEAD
     font-size: 15px;
-=======
-    font-size; 15px;
->>>>>>> 2dd0491d17ba6e5134681fa1eef6d741ba4175c0
     color: rgb(5, 61, 98);
     background: rgba(204,227,242,0.5);
 }
@@ -938,11 +934,7 @@ footer{grid-area:footer;}
     font-style: normal;
     font-variant: normal;
     font-weight: bold;
-<<<<<<< HEAD
     font-size: 2em;
-=======
-    font-size; 2em;
->>>>>>> 2dd0491d17ba6e5134681fa1eef6d741ba4175c0
     color:rgb(5,61,98);
 }
 
