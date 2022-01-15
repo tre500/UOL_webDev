@@ -7,7 +7,7 @@ h2 {
     font-size: 2em;
 }
  
-
+/* Navigation menu settings starts under this line---------------------------------------------------------- */
 #menu {
 	background: rgba(0, 153, 204, 0.5);
 	color: #FFF;
@@ -104,10 +104,12 @@ h2 {
 	color: #444444;
 }
 
-/* responsive settings */
-@media screen and (max-width: 800px){
+/* end of navigation menu settings block ----------------------------------------------------------------------------- */
 
-	
+
+
+/* responsive website settings. Contains style settings for differen devices --------------------------------------------*/
+@media screen and (max-width: 800px){
 
 	/* responsive menu */
 
@@ -133,14 +135,6 @@ h2 {
        
 	}
 
-	 .promos {
-		 width: 20%;
-	 }
-
-	 .promos_b {
-		width: 20%;
-	}
-
 	/* responsive settings for 6 div blocks */
 	div.promo_main_div div {
         width: 100%;
@@ -151,15 +145,20 @@ h2 {
 		margin-bottom: 2em;
 }
 
-div.promo_main_div_b div {
-	width: 100%;
-	float: none;
-	 margin-top: 2em;
-	margin-right: auto;
-	margin-left: auto; 
-	margin-bottom: 2em;
-}
+    div.promo_main_div_b div {
+        width: 100%;
+        float: none;
+        margin-top: 2em;
+        margin-right: auto;
+        margin-left: auto; 
+        margin-bottom: 2em;
+        height: auto;
+    }
 
+    .promos {
+        font-size: 1.1em;
+    }
+ 
     .future_events_div {
         font-size: 0.7em;
     }
@@ -168,6 +167,7 @@ div.promo_main_div_b div {
         font-size: 0.7em;
     } 
 
+    
 
 	/* footer responsive block */
 	footer{
@@ -192,15 +192,21 @@ div.promo_main_div_b div {
 
 }
 
-/* end of responsive settings */
+/* end of responsive website settings */
 /* ----------------------------------------------------------------------------------------------- */
-div #christmass-image {
+
+
+
+/* code under this line related to first main div block --------------------------------------------- */
+/* First div block after menu.
+   Margin settings */
+div #christmas-image {
     margin: 1em;
       
 }
 
-/* main image div block*/
-#christmass-image{
+/* main div block*/
+#christmas-image{
     position:relative;
     margin: 0;
     display: flex;
@@ -211,24 +217,82 @@ div #christmass-image {
  
 #test {
     position:absolute;
- 
+
     z-index: 1;
     color: white;
     font-family: sans-serif;
 }
 
 /* main image settings */
-#christmass-image img{
+#christmas-image img{
     position:relative;
     width: 100%;
     opacity: 0.5;
     height: 420px;
     object-fit: cover;
+
+}
+
+/* end of first main div block -----------------------------------------------*/
+
+
+/* code under this line used to style "buy ticket online form" */
+
+.buy-ticket-class {
+
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.buy-ticket-class label {
+    margin-left: 2%;
+}
+ 
+
+.plus-minus-button   {
+    background-color: Transparent; 
+    width: 2em;
+    height: 2em;
+    border: rgba(0, 0, 0, 0.527) 1px solid;
+    color: rgb(0, 0, 0);
+    border-radius: 50%;
+    transition-duration: 0.4s;
+}
+
+ #buy-ticket {
     
+        background-color: Transparent; 
+        width: 8em;
+        height: 2.5em;
+        border: rgb(0, 0, 0) 1px solid;
+        color: rgb(0, 0, 0);
+        border-radius: 6px;
+        transition-duration: 0.4s;
+   
+ }
+
+ #buy-ticket:hover {
+    background-color: rgba(42, 211, 174, 0.521); 
+   }
+
+
+ #book-date {
+     width: auto;
+     height: 2.3em;
+     border: black 1px solid;
+     border-radius: 3%;
+ }
+
+ .select-people {
+    width: 4%;
+    height: 2em;
+    border: black 1px solid;
+    border-radius: 3%;
+
 }
 
 
-  #book-christmass-ticket {
+  #book-christmas-ticket {
     background-color: Transparent; 
     width: 8em;
     height: 2.5em;
@@ -238,11 +302,140 @@ div #christmass-image {
     transition-duration: 0.4s;
 }
 
-#book-christmass-ticket:hover {
+#book-christmas-ticket:hover {
+    background-color: rgba(42, 211, 174, 0.521); 
+   }
+
+   /* end of booking form style settings */
+
+
+/* future event css code------------------------------------------ */
+#future_event_link {
+    z-index: 1;
+    color:#ffffff; 
+    font-size: 1.6em;
+    font-family: sans-serif;
+    
+}
+
+.future_event p {
+    font-size: 1.4em;
+    font-family: sans-serif;
+         
+  }
+
+.future_event {
+     padding-top: 10%;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/future_event.jpg");
+    background-size: 100% 100%;
+    width: 95%;
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid black;
+    display:inline-block;
+    height: 23em;
+    margin: 2em auto auto 2em;
+}
+/* end of future events block */
+
+/* end of future event css code ----------------------------------------- */
+
+
+/*------------------------------------------------------------------------------ 
+code under this line is for div with 6 small div blocks. 
+Contains information such as locations of parking lots, events, hotels, restaurants, etc 
+ */
+
+ /* container div for 6 div blocks */
+.promo_main_div {
+
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2em;
+	/* margin-left: 10%;
+	margin-right: 10%; */
+	height:120%;
+
+}
+
+/* 6 div blocks for advertising */
+.promos {
+    width: calc(100% / 4);
+   border: 1px solid black;
+   vertical-align: middle;
+   display:inline-block;
+   align-items: center;
+   height: 13em;
+   margin: 2em auto auto 2em;
+   color: #FFF;
+   z-index: 1;
+   
+}
+
+/* setting background image for each of 6 blocks */
+.new_ride {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/new_ride.jpg);
+    
+    }
+
+.dining {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/dining.jpg);
+
+}
+
+.shopping {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/shopping.jpg);
+
+}
+
+.special_events {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/events.jpg);
+
+}
+
+.annual_pass {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/annual_pass.jpg);
+
+}
+
+.parking {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url(../pics/parking.jpg);
+
+}
+
+/* settings for button */
+#promos_button {
+    background-color: Transparent; 
+    width: 8em;
+    height: 2.5em;
+    border: white 1px solid;
+    color: #FFF;
+    border-radius: 6px;
+    transition-duration: 0.4s;
+
+  }
+
+  #promos_button:hover {
     background-color: rgba(42, 211, 174, 0.521); 
 
   }
- 
+
+ /* end of second div block with 6 small div blocks --------------------------------------------------------------------*/
+
+
+/* --------------------------------------------------------------------
+  Code under this line is for last two div block that contains
+  informations about covid safety protocols and general information for visitors
+*/
+
 #promo_link {
 
 	margin-top: 25%;
@@ -255,18 +448,7 @@ button:hover {
 }
 
 
-/* future events css block */
-/* container div for 6 div blocks */
-.promo_main_div {
 
-	width: 100%;
-	text-align: center;
-	margin-bottom: 2em;
-	/* margin-left: 10%;
-	margin-right: 10%; */
-	height:120%;
-
-}
 
 
 .promo_main_div_B {
@@ -281,6 +463,8 @@ button:hover {
 }
 
 .promos_b {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
    text-align: center;
    width: calc(100%/2.2);
    border: 1px solid black;
@@ -292,176 +476,31 @@ button:hover {
    /* font-size: 1.6em; */
     }   
 
-    .guide {
-            background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/guide.jpg");
+.guide {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), 
+    url("../pics/guide.jpg");
 
     }
-    
 
-    .promos_b p {
-        font-size: 1.1em;
-        }
-    
-    .cv19 {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/safety.jpg");
+.promos_b p {
+    font-size: 1.1em;
+    }
+
+.cv19 {
+    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ),
+        url("../pics/safety.jpg");
 
     }
-    
-
-#future_event_link {
-        z-index: 1;
-        color:#ffffff; 
-        font-size: 1.6em;
-        font-family: sans-serif;
-        
- 
-   }
- 
-   .future_event p {
-        font-size: 1.4em;
-        font-family: sans-serif;
-             
-      }
 
 
-/* 6 div blocks for advertising */
-.future_event {
- 	/* width: 24%; */
-    padding-top: 10%;
-    position: relative;
-    background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url("../pics/future_event.jpg");
-	width: 95%;
-    color: #FFF;
-    text-align: center;
-    vertical-align: middle;
-	border: 1px solid black;
-  	display:inline-block;
- 	height: 23em;
-	margin: 2em auto auto 2em;}
-/* end of future events block */
- 
 
-/* 6 div blocks for advertising */
-.promos {
- 	/* width: 24%; */
-	width: calc(100% / 4);
-	border: 1px solid black;
-    vertical-align: middle;
-	display:inline-block;
-	align-items: center;
-	height: 13em;
-	margin: 2em auto auto 2em;
-    color: #FFF;
-    z-index: 1;
-    font-size: 0.9em;
-}
-
-    .new_ride {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/new_ride.jpg);
-        /* color: #FFF;
-        z-index: 1;
-        font-size: 0.9em; */
-      }
-
-      
-       
-       .dining {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/dining.jpg);
-        /* color: #FFF;
-        z-index: 1;
-        font-size: 0.9em; */
-      }
-
-      .shopping {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/shopping.jpg);
-        /* color: #FFF;
-        z-index: 1;
-        font-size: 0.9em; */
-      }
-
-      .special_events {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/events.jpg);
-        /* color: #FFF;
-        z-index: 1;
-        font-size: 0.9em; */
-      }
-
-      .annual_pass {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/annual_pass.jpg);
-        /* color: #FFF;
-        z-index: 1;
-        font-size: 0.9em; */
-      }
-
-      .parking {
-        background-image: linear-gradient(to right, rgba(10, 9, 85, 0.466), rgba(255, 255, 255, 0.1) ), url(../pics/parking.jpg);
-        
-      }
-
-      
-
- 
-     #promos_button {
-        background-color: Transparent; 
-        width: 8em;
-        height: 2.5em;
-        border: white 1px solid;
-        color: #FFF;
-        border-radius: 6px;
-        transition-duration: 0.4s;
-  
-      }
-
-      #promos_button:hover {
-        background-color: rgba(42, 211, 174, 0.521); 
- 
-      }
+/* end of general and covid info div block css settings*/
 
 
- 
-/* 
-	E-mail signup form
-	form {
- 		font-family: sans-serif;
-	  }
-	  
-	  .container {
-		padding: 10px;
-	  }
-	  
-	  input[type=text], input[type=submit] {
-		width: 100%;
-		padding:9px;
-		margin: 8px 0;
-		display: inline-block;
-		border: 1px solid #ccc;
-		box-sizing: border-box;
-	  }
-	  
-	  input[type=checkbox] {
-		margin-top: 10px;
-	  }
-	  
-	  input[type=submit] {
-		background-color: #12868f;
-		color: white;
-		border: none;
-	  }
-	  
-	  
-	  input[type=submit]:hover {
-		opacity: 0.8;
-	  } */
-
- 	    
 
 
-	  /* footer */
-
-	   
-
- 
-
+/* --------------------------------------------------------
+footer settings under this line */
 footer{
 	padding:0; 
 	margin:0;
@@ -606,8 +645,7 @@ footer{
 .footer-bottom center{
     padding: 5px;
     font-size: 0.9375rem;
-    /* background: #151515; */
-}
+ }
 
 .footer-bottom center span{
     color: #656565;
@@ -621,9 +659,7 @@ footer{
     text-decoration: underline;
 }
 
- 
-
-	  /* end of footer */
+/* end of footer css code --------------------------------------------------------------------------*/
 
 
 
